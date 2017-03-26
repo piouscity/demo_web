@@ -3,173 +3,101 @@
 <title>Smart Clock</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://piouscity.github.io/demo_web/w3.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 	html, body, h1, h2, h3, h4, h5, h6{
-		font-family: "Segoe UI", cursive, sans-serif;
-	}	
-	div.scroll {				
-		height:905px;
-		overflow: scroll;
+		font-family: "Segoe UI", cursive, sans-serif;		
+	}		
+	img{
+		max-height:100%;
+		max-width:100%;
 	}
+	.scroll{
+		overflow:auto;
+	}
+	.affix {
+		top: 0px;
+	}
+	body {
+		position: relative;
+	}	  	  	  
+	@media screen and (max-width: 810px) {
+			#section1, #section2, #section3, #section41, #section42  {
+			margin-left: 150px;
+		}
+	}	
 </style>
 
-<body class = "w3-light-gray"> 	
+<body class = "w3-light-gray">
 
-<header class = "w3-container w3-green"> 
-	<h1>
-	CodeForFood team - Smart clock project
-	</h1>
-</header>
+<div class = "row" style = "height:100%">
+	<!-------------------------- Phan ben trai -------------------------------->
+	<div class = "w3-display-container col-sm-3" style = "height:100%">
+		<nav>
+			<ul class="w3-green nav nav-pills nav-stacked" style = "width:230px;height:100%" data-spy="affix">
+				<li class = "w3-display-position" style = "top:25px;left:20px"> 
+					<a href = "https://piouscity.github.io/demo_web/index.html"> <img src = "https://piouscity.github.io/demo_web/infomation.png"
+						alt = "Information" style = "width:80%;height:80%"> 
+					</a>
+				</li>
+				
+				<li class = "w3-display-position" style = "top:25px;left:20px"> 
+					<a href = "https://piouscity.github.io/demo_web/problem.html"> <img src = "https://piouscity.github.io/demo_web/problem.png"
+						alt = "Problem" style = "width:80%;height:80%"> 
+					</a>
+				</li>
+				
+				<li class = "w3-display-position" style = "top:25px;left:20px"> 
+					<a href = "#"> <img src = "https://piouscity.github.io/demo_web/solution.png"
+						alt = "Solution" style = "width:80%;height:80%"> 
+					</a>
+				</li>
+				
+				<li class = "w3-display-position" style = "top:25px;left:20px"> 
+					<a href = "#"> <img src = "https://piouscity.github.io/demo_web/detail solution.png"
+						alt = "Detail Solution" style = "width:80%;height:80%"> 
+					</a>
+				</li>				
+			</ul>
+		</nav>
+	</div>
 
-<img src = "https://fticsa.bn1303.livefilestore.com/y4mrrunFN5lYXbTU989Ui_whCgCAAl1LFj5I-UQUccUKDPc03Vhw53RB7wpVS11G4Jtfljy23gC-GgYG3ZhJhZN2AjSsYfX7flZv5HUaA0HErGy34_1r8lgq9daQnDYbAqPHRFEzXg-4rrhKxQmx-OnzC87VoODvx4M-vFI3CelcuJwKWlCxDVoBvGlPFruy6xx6GbJx4OTd98yMzoXU_D3cQ?width=1318&height=218&cropmode=none"
-	alt = "Code" style = "width:100%">
-<div class = "w3-row">
-	<div class = "w3-display-container w3-green w3-quarter" style = "height:905px">
-		<div class = "w3-bar">						
-			<div class = "w3-display-position w3-bar-item" style = "top:0px;left:30px"> 
-				<a href = "#"> <img src = "https://lh5.googleusercontent.com/ru4qVBwBMUtWwH4_JkYkrd_vg8rCGeQ9GiCi_n1zslgHfkKJEspG28IlZDs5WLUV8VvtPawiI2WnuCU=w1366-h638"
-					alt = "Information" style = "width:100% height:100%"> 
-				</a>
-			</div>
-			
-			<div class = "w3-display-position w3-bar-item" style = "top:230px;left:30px"> 
-				<a href = "#"> <img src = "https://lh3.googleusercontent.com/yPOE3vEUqbXDYRducN-7WEMtN2Oicecuq4oO_ivcFXvUwi1NUwlQouvun0e42NZszdaboxrJddcggZY=w1366-h638"
-					alt = "Information" style = "width:100% height:100%"> 
-				</a>
-			</div>
-			
-			<div class = "w3-display-position w3-bar-item" style = "top:460px;left:30px"> 
-				<a href = "#"> <img src = "https://lh4.googleusercontent.com/HULkktXBunV_qn2s_TbMllTx4VcomjVE564bwSMRfmGiXXFe4IAISjxnY2ZqRu2kdmJulat94ynI0zQ=w1366-h638"
-					alt = "Information" style = "width:100% height:100%"> 
-				</a>
-			</div>
-			
-			<div class = "w3-display-position w3-bar-item" style = "top:690px;left:30px"> 
-				<a href = "#"> <img src = "https://lh6.googleusercontent.com/3ZLvQj0MbaJaoXNT30FoavgFCBvG0Y-oRDzT4fK1mm46E8_QxeYSdZd0SEKkvldPR8I1ZJ-uAFJdsHY=w1366-h638"
-					alt = "Information" style = "width:100% height:100%"> 
-				</a>
+	<!----------------------- Phan noi dung -------------------------->
+	
+	<div class = "w3-threequarter w3-display-container w3-row">
+		<h1 class = "w3-xxxlarge w3-left w3-margin w3-padding-16"> CodeForFood team - Smartclock project</h1>
+		<img src = "https://piouscity.github.io/demo_web/Code.png" 
+			alt = "Code" style = "height:100%;width:100%">		
+		<div class = "w3-container">
+			<p class = "w3-center w3-xxlarge"> Các thành viên nhóm: </p>
+		</div>
+		
+		<div class = "w3-container w3-third">			
+			<p class = "w3-xlarge"> Trần Anh Hào - 1612850. </p>			
+			<div class = "w3-container"> <img src = "https://piouscity.github.io/demo_web/Hao.jpg"
+				alt = "Tran Anh Hao"> 
 			</div>
 		</div>
+		<div class = "w3-container w3-third">			
+			<p class = "w3-xlarge"> Hồ Trung Hiếu - 1612853. </p>
+			<div class = "w3-container"> <img src = "https://piouscity.github.io/demo_web/Hieu.jpg"
+				alt = "Ho Trung Hieu" style = "width:100%;height:100%"> 
+			</div>
+		</div>		
+		<div class = "w3-container w3-third">			
+			<p class = "w3-xlarge"> Nguyễn Khắc Đức - 1612845. </p>
+			<div class = "w3-container"> <img src = "https://piouscity.github.io/demo_web/Duc.jpg"
+				alt = "Nguyen Khac Duc" style = "width:100%;height:100%"> 
+			</div>
+		</div>					
 	</div>
-	<div class = "w3-container w3-threequarter scroll">
-		<h1 class = "w3-xxxlarge w3-center"> Tình hình thực tiễn </h1>
-		<p class = "w3-xlarge w3-center">  Một số người thường hay dậy muộn. 
-			Mặc dù có đặt báo thức nhưng khi chuông đồng hồ reo thì họ tắt chuông trong vô thức, dẫn đến trễ giờ (học, hẹn, hoặc làm việc)			
-		<p>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br><br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-	</div>
+</div>
+
+
+<div class = "w3-display-container w3-green" style = "height:35px" style = "position:fixed; bottom:0">
+	<div class = "w3-display-middle"> Powered by W3schools. </div>
 </div>
 
 
