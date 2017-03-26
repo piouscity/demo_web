@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>Smart Clock</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://piouscity.github.io/demo_web/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	html, body, h1, h2, h3, h4, h5, h6{
+		font-family: "Segoe UI", cursive, sans-serif;		
+	}		
+	img{
+		max-height:100%;
+		max-width:100%;
+	}
+	.scroll{
+		overflow:auto;
+	}
+	.affix {
+		top: 0px;
+	}
+	body {
+		position: relative;
+	}	  	  	  
+	@media screen and (max-width: 810px) {
+			#section1, #section2, #section3, #section41, #section42  {
+			margin-left: 150px;
+		}
+	}	
+</style>
+
+<body class = "w3-light-gray">
+
+<div class = "row" style = "height:100%">
+	<!-------------------------- Phan ben trai -------------------------------->
+	<div class = "w3-display-container col-sm-3" style = "height:100%">
+		<nav>
+			<ul class="w3-green nav nav-pills nav-stacked" style = "width:230px;height:100%" data-spy="affix">
+				<li class = "w3-display-position" style = "top:25px;left:20px"> 
+					<a href = "https://piouscity.github.io/demo_web/index.html"> <img src = "https://piouscity.github.io/demo_web/infomation.png"
+						alt = "Information" style = "width:80%;height:80%"> 
+					</a>
+				</li>
+				
+				<li class = "w3-display-position" style = "top:25px;left:20px"> 
+					<a href = "https://piouscity.github.io/demo_web/problem.html"> <img src = "https://piouscity.github.io/demo_web/problem.png"
+						alt = "Problem" style = "width:80%;height:80%"> 
+					</a>
+				</li>
+				
+				<li class = "w3-display-position" style = "top:25px;left:20px"> 
+					<a href = "https://piouscity.github.io/demo_web/solution.html"> <img src = "https://piouscity.github.io/demo_web/solution.png"
+						alt = "Solution" style = "width:80%;height:80%"> 
+					</a>
+				</li>
+				
+				<li class = "w3-display-position" style = "top:25px;left:20px"> 
+					<a href = "https://piouscity.github.io/demo_web/detail solution.html"> <img src = "https://piouscity.github.io/demo_web/detail solution.png"
+						alt = "Detail Solution" style = "width:80%;height:80%"> 
+					</a>
+				</li>				
+			</ul>
+		</nav>
+	</div>
+
+	<!----------------------- Phan noi dung -------------------------->
+	
+	<div class = "col-sm-9 w3-display-container w3-row">
+		<h1 class = "w3-xxxlarge w3-center w3-margin w3-padding-16"> Giải pháp chi tiết </h1>
+		<!-------------------  Sudoku ------------------------>
+		<div class = "w3-container w3-quarter">
+			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/sudoku.gif"
+				alt = "Sudoku" style = "width:100%;height:100%">
+		</div>
+		
+		<div class = "w3-container w3-threequarter w3-left w3-padding-16 w3-large">			
+			<strong class = "w3-xlarge"> Sudoku </strong>
+			<p> Đây là một trò chơi trí tuệ rất thích hợp cho việc tập trung suy nghĩ và làm mất đi cơn buồn ngủ.
+				Trò chơi là một bảng ô vuông kích thước N x N, trên mỗi ô vuông có thể chứa một số trong khoảng [1,N] hoặc là ô trống. 
+				Người chơi sẽ phải điền các số vào các ô trống sao cho trên từng hàng, từng cột và từng khung vuông kích thước K x K, mỗi số chỉ xuất hiện duy nhất một lần. 
+				Trò chơi hoàn thành khi toàn bộ các ô trống được điền và thỏa mãn yêu cầu của trò chơi.
+			<p>
+		</div>
+		
+		<div class = "w3-container w3-large w3-padding-16">
+			<p> <b> Ưu điểm: </b> Trò chơi buộc người dùng phải tập trung suy nghĩ nên sẽ giúp cơn buồn ngủ tan biến nhanh chóng. </p>			
+			<p> <b> Khuyết điểm: </b>
+				Đối với những người mới biết chơi, trò này có thể gây ra cảm giác ức chế khi vừa phải nghe âm thanh báo thức mà lại không giải được sudoku, 
+				nên tình trạng tháo pin rất dễ xảy ra.
+			</p>
+		</div>
+		<!------------------ Number game ------------------>
+		<div class = "w3-container w3-quarter">
+			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/numbergame.png"
+				alt = "Number game" style = "width:100%;height:100%">
+		</div>
+		
+		<div class = "w3-container w3-threequarter w3-left w3-padding-16 w3-large">			
+			<strong class = "w3-xlarge"> Memory game </strong>
+			<p> Đây là một trò chơi rất thú vị đòi hỏi bạn phải có một trí nhớ tốt. 
+				Luật chơi rất đơn giản: hệ thống sẽ đưa ra một con số bất kì, người chơi sẽ có một khoảng thời gian để ghi nhớ, 
+					sau khi thời gian kết thúc người chơi có nhiệm vụ phải ghi lại con số đó. Nếu trả lời đúng, người chơi sẽ lên level và gặp những số khó và dài hơn, ngược lại họ sẽ phải tiếp tục chơi với level hiện tại. 
+				Trò chơi kết thúc khi người chơi vượt qua một level nhất định hoặc đạt một số điểm nhất định.
+			<p>
+		</div>
+		
+		<div class = "w3-container w3-large w3-padding-16">
+			<p> <b> Ưu điểm: </b> Nhanh chóng giúp người chơi tỉnh ngủ, tạo một cảm giác thích thú và cải thiện được trí nhớ của mình. </p>	
+			<p> <b> Khuyết điểm: </b>
+				Trò chơi không có tính đa dạng nên nếu chơi nhiều sẽ gây cảm giác nhàm chán.
+			</p>
+		</div>
+		
+		<!--------------- Minesweeper------------------->
+		<div class = "w3-container w3-quarter">
+			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/mine.jpeg"
+				alt = "Minesweeper" style = "width:100%;height:100%">
+		</div>
+		
+		<div class = "w3-container w3-threequarter w3-left w3-padding-16 w3-large">			
+			<strong class = "w3-xlarge"> Minesweeper </strong>
+			<p> Đây là một trò chơi trí tuệ khác cũng rất thích hợp để giúp người chơi tỉnh ngủ. 
+				Trò chơi là một bảng hình chữ nhật M x N, trên mỗi ô vuông có thể chứa các số từ 1 đến 8, ô trống hoặc là bom. 
+				Các số trong mỗi ô vuông thể hiện có bao nhiêu trái bom xung quanh nó. 
+				Mục đích của trò chơi là cần phải lật hết tất cả các ô vuông mà không lật trúng trái bom nào. 
+				Người chơi có thể đặt cờ vào 1 ô vuông để xác định ô đó có chứa bom hay không. 
+				Khi lật trúng ô bom người chơi phải chơi lại từ đầu. 
+				Trò chơi kết thúc khi tất cả các ô không chứa bom đều được lật.
+			<p>
+		</div>
+		
+		<div class = "w3-container w3-large w3-padding-16">
+			<p> <b> Ưu điểm: </b> Trò chơi này khá thú vị và cũng buộc người chơi phải suy nghĩ khá kĩ càng. 
+				Khi hoàn thành được trò chơi sẽ giúp người chơi cảm thấy thoải mái và năng động hơn. 
+			</p>	
+			<p> <b> Khuyết điểm: </b>
+				Trò chơi đòi hỏi tính kiên nhẫn và tỉ mỉ cao, do khi lật trúng ô bom người chơi sẽ phải chơi lại từ đầu,
+					vì thế cũng có thể gây ức chể và dẫn đến tình trạng tháo pin.
+			</p>
+		</div>
+		<!----------------- Nhac chuong bao thuc ---------------------->
+		<div class = "w3-container w3-quarter">
+			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/mine.jpeg"
+				alt = "Minesweeper" style = "width:100%;height:100%">
+		</div>
+		
+		<div class = "w3-container w3-threequarter w3-left w3-padding-16 w3-large">			
+			<strong class = "w3-xlarge"> Minesweeper </strong>
+			<p> Đây là một trò chơi trí tuệ khác cũng rất thích hợp để giúp người chơi tỉnh ngủ. 
+				Trò chơi là một bảng hình chữ nhật M x N, trên mỗi ô vuông có thể chứa các số từ 1 đến 8, ô trống hoặc là bom. 
+				Các số trong mỗi ô vuông thể hiện có bao nhiêu trái bom xung quanh nó. 
+				Mục đích của trò chơi là cần phải lật hết tất cả các ô vuông mà không lật trúng trái bom nào. 
+				Người chơi có thể đặt cờ vào 1 ô vuông để xác định ô đó có chứa bom hay không. 
+				Khi lật trúng ô bom người chơi phải chơi lại từ đầu. 
+				Trò chơi kết thúc khi tất cả các ô không chứa bom đều được lật.
+			<p>
+		</div>
+		
+		<div class = "w3-container w3-large w3-padding-16">
+			<p> <b> Ưu điểm: </b> Trò chơi này khá thú vị và cũng buộc người chơi phải suy nghĩ khá kĩ càng. 
+				Khi hoàn thành được trò chơi sẽ giúp người chơi cảm thấy thoải mái và năng động hơn. 
+			</p>	
+			<p> <b> Khuyết điểm: </b>
+				Trò chơi đòi hỏi tính kiên nhẫn và tỉ mỉ cao, do khi lật trúng ô bom người chơi sẽ phải chơi lại từ đầu,
+					vì thế cũng có thể gây ức chể và dẫn đến tình trạng tháo pin.
+			</p>
+		</div>
+		<!--<div class = "w3-container w3-quarter">
+			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/sudoku.gif"
+				alt = "The clock's ringing" style = "width:100%;height:100%">
+			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/numbergame.png"
+				alt = "Man turns off the clock" style = "width:100%;height:100%">										
+			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/problem3.png"
+				alt = "Man speeping">
+			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/problem4.png"
+				alt = "Man running">
+		</div>
+		<div class = "w3-container w3-threequarter w3-left w3-padding-16 w3-large">			
+			<p class = "w3-xlarge"> Sudoku </p>			
+			<p> Đây là một trò chơi trí tuệ rất thích hợp cho việc tập trung suy nghĩ và làm mất đi cơn buồn ngủ.
+				Trò chơi là một bảng ô vuông kích thước N x N, trên mỗi ô vuông có thể chứa một số trong khoảng [1,N] hoặc là ô trống. 
+				Người chơi sẽ phải điền các số vào các ô trống sao cho trên từng hàng, từng cột và từng khung vuông kích thước K x K, mỗi số chỉ xuất hiện duy nhất một lần. 
+				Trò chơi hoàn thành khi toàn bộ các ô trống được điền và thỏa mãn yêu cầu của trò chơi.
+			<p>
+			<br>
+			<br>
+			<br>						
+			<br>						
+			<br>						
+			<p class = "w3-center w3-xlarge w3-padding-16"> Hoặc cho dù có nghe thấy thì họ cũng tắt đồng hồ trong vô thức, mặc dù buổi tối rất quyết tâm dậy sớm. </p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p class = "w3-center w3-xlarge w3-padding-16"> Và cứ như thế, họ say giấc nồng mặc cho thời gian trôi qua. </p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p class = "w3-center w3-xlarge w3-padding-16"> Dẫn đến trễ giờ làm, giờ học hoặc trễ hẹn,... Ảnh hưởng đến cuộc sống. </p>
+		</div>-->
+	</div>
+</div>
+
+
+<div class = "w3-display-container w3-green" style = "height:35px" style = "position:fixed; bottom:0">
+	<div class = "w3-display-middle"> Powered by W3schools. </div>
+</div>
+
+
+</body>
+</html>
