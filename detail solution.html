@@ -30,7 +30,10 @@
 			#section1, #section2, #section3, #section41, #section42  {
 			margin-left: 150px;
 		}
-	}	
+	}		
+	.boldlist ol, li { font-weight: bold; font-size: 23px; }
+	.boldlist li div { font-weight: normal; }
+
 </style>
 
 <body class = "w3-light-gray">
@@ -71,9 +74,156 @@
 	
 	<div class = "col-sm-9 w3-display-container w3-row">
 		<div class = "container">
-			<h1 class = "w3-xxxlarge w3-center w3-margin w3-padding-16"> Giải pháp chi tiết </h1>
-			<h2 class = "s3-xxlarge w3-left w3-margin w3-padding-16"> Trò chơi: <h2>
+			<h1 class = "w3-xxxlarge w3-center w3-margin w3-padding-16"> Kế hoạch </h1>
+			<h2 class = "s3-xxlarge w3-left w3-margin w3-padding-16"> Các tính năng dự kiến cho ứng dụng: </h2>			
+		</div>		
+		<!------------------- Van de --------------------------->
+		<div class = "w3-container">
+			<strong class = "w3-xlarge"> Vấn đề: </strong>
+			<p class = "w3-large w3-padding-16 w3-left"> Lâu nay việc ngủ nướng hoặc ngủ mà không nghe tiếng báo thức là một vấn đề đáng để lưu tâm trong cuộc sống của những người bận rộn ngày nay. 
+				Đối với một số người, họ thường hay thức khuya để làm việc và phải dậy sớm vào sáng hôm sau để đi làm. 
+				Do đó việc ngủ quên và đi làm trễ xảy ra một cách khá thường xuyên. 
+				Để đối phó với tình trạng này, một số người đã đặt một lúc khoảng từ 2 – 3 cái báo thức, 
+					tuy nhiên vào lúc đang còn mê ngủ, đầu óc có thể còn chưa tỉnh táo nên đôi khi ta có thể tắt báo thức trong vô thức, 
+					và kết quả là chúng ta vẫn thức dậy muộn và trễ giờ làm.
+			</p>
 		</div>
+		<!------------------ Huong giai quyet ----------------------->
+		<div class = "w3-container">
+			<strong class = "w3-xlarge"> Hướng giải quyết: </strong>
+			<p class = "w3-large w3-padding-16 w3-left">
+				Chúng tôi đã miệt mài tìm hiểu và cố gắng nghiên cứu để đưa ra giải pháp tốt nhất cho vấn đề nhức nhối này. 
+				Sau một thời gian chúng tôi đã đi đến một kết luận: để một người có thể quên đi cơn buồn ngủ mỗi khi phải thức dậy, 
+					ta cần phải tạo động lực hoặc tạo niềm vui cho họ. 
+				Một ví dụ dễ dàng có thể thấy: nếu ngày hôm sau bạn có 1 chuyến đi du lịch xa với gia đình hoặc với lớp, 
+					bạn có thể dễ dàng thức dậy ngay khi nghe những tiếng chuông báo thức đầu tiên với cảm giác phấn chấn 
+					(hoặc trong một số trường hợp bạn thức dậy trước cả khi báo thức đổ chuông!), 
+					dù lúc đó bạn chỉ ngủ được khoảng 1 – 2 tiếng đi chăng nữa. 
+				Đối nghịch với nó, bạn thức dậy và nhớ ra hôm nay là thứ hai đầu tuần, hoặc là hôm nay có các môn mà bạn không thích (Triết học, …) 
+					thì bạn sẽ bắt đầu có cảm giác không muốn thức dậy. 
+				Theo như những nghiên cứu của chúng tôi, một người mỗi khi thức dậy sẽ định hình trước những gì họ sẽ phải làm tiếp theo trong ngày, 
+					đặc biệt là vào buổi sáng: họ chỉ thức dậy khi họ buộc phải làm một điều gì đó hoặc là họ ngủ quá nhiều rồi. 
+				Do đó nếu muốn họ thực sự thức dậy để có thể đi học và làm việc thì phải tạo một động lực hoặc niềm vui cho ngày mới của họ.
+				Dưới đây là 3 tính năng chúng tôi phát triển để giúp đỡ người dùng có thể thoát khỏi cơn buồn ngủ, 
+					đồng thời tạo một tâm trạng sảng khoái và tràn đầy năng lượng cho họ mỗi khi thức dậy.
+			</p>
+		</div>
+		<!----------------- Cac tinh nang ----------------------->
+		<div class = "w3-container">
+			<strong class = "w3-xlarge"> Các tính năng có trong ứng dụng: </strong>
+			<p class = "w3-large">
+				Ứng dụng sẽ có 4 loại báo thức: báo thức kiểu thông thường, báo thức tạo note, báo thức chơi game và báo thức tin tức. 
+				Người dùng sau khi cài đặt thời gian thức dậy và nhạc chuông thì có thể chọn 1 trong 4 kiểu báo thức ở trên tùy theo ý thích.
+			</p>
+			<ol class = "boldlist">
+				<!--------------- Bao thuc thong thuong --------------->
+				<li> <strong class = "w3-xlarge"> Báo thức thông thường: </strong> </li>
+				<ul>
+					<!--------------- Y tuong ------------------>
+					<li class = "w3-large"> <b> Ý tưởng: </b> </li>
+					<p class = "w3-large">
+						Đây chỉ đơn thuần là báo thức nhạc chuông và không tích hợp thêm bất cứ phần mềm nào khác. 
+						Để tránh cho một người ngủ nướng, báo thức này sẽ báo nhiều nhất khoảng 4-5 lần, mỗi lần khoảng 3 phút. 
+						Số lần sẽ được tính theo số lượng người đó phải tắt báo thức, tức là báo thức sẽ tắt hoàn toàn khi người đó tự tắt báo thức đúng số lần đã quy định.
+					</p>
+					<!---------------- Cach thuc hien ----------------->
+					<li class = "w3-large"> <b> Cách thực hiện: </b> </li>
+					<p class = "w3-large">
+						Khi người dùng muốn cài đặt loại báo thức này, họ cần chọn kiểu báo thức thông thường, 
+							phần mềm sẽ đưa ra một câu hỏi “Bạn cần báo thức lại bao nhiêu lần?”. 
+						Khi đó người dùng có thể tùy ý lựa chọn số lần báo thức. 
+						Lưu ý là số lần ở đây sẽ tính bằng số lần họ tắt báo thức, tức là nếu họ không tắt thì chuông có thể sẽ đổ nhiều hơn khi cài đặt.
+					</p>
+					<!---------------------- Doi tuong huong toi ----------------->
+					<li class = "w3-large"> <b> Đối tượng hướng tới: </b></li>
+					<p class = "w3-large">
+						Là những người có khả năng tắt báo thức trong vô thức, hoặc những người hay có thói quen tắt báo thức xong ngủ tiếp. 
+						Loại này có thể dùng cho mọi lứa tuổi, đặc biệt phù hợp với những người ngủ nướng chuyên nghiệp.
+					</p>
+				</ul>
+				<!--------------- Bao thuc tao note --------------->
+				<li> <strong class = "w3-xlarge"> Báo thức tạo note: </strong> </li>
+				<ul>
+					<!--------------- Y tuong ------------------>
+					<li class = "w3-large"> <b> Ý tưởng: </b> </li>
+					<p class = "w3-large">
+						Đây là loại báo thức sẽ cho người dùng ghi chú lại những việc quan trọng phải làm sau khi thức dậy, 
+							để họ có thể thức dậy kịp thời và không bỏ lỡ những sự kiện quan trọng ấy. 
+						Báo thức sẽ đổ chuông liên tục cho đến khi người dùng thức dậy, và sau khi người đó tắt báo thức 1 phút, 
+							chuông sẽ ngừng đổ để đảm bảo rằng họ chắc chắn đã thức dậy.
+					</p>
+					<!---------------- Cach thuc hien ----------------->
+					<li class = "w3-large"> <b> Cách thực hiện: </b> </li>
+					<p class = "w3-large">
+						Khi người dùng muốn cài đặt loại báo thức này, họ cần chọn kiểu báo thức tạo note, 
+							phần mềm sẽ đưa ra một khung văn bản cho bạn ghi ra những sự kiện quan trọng sau khi thức dậy
+							đồng thời sẽ đưa ra một câu hỏi “Bạn muốn báo thức kéo dài trong bao lâu?”.
+						Khi đó người dùng sẽ cài đặt thời gian tùy theo mức độ tin tưởng rằng người đó có thể thức dậy trước khoảng thời gian đó.
+					</p>
+					<!---------------------- Doi tuong huong toi ----------------->
+					<li class = "w3-large"> <b> Đối tượng hướng tới: </b></li>
+					<p class = "w3-large">
+						Loại báo thức này không phù hợp với những người ngủ nướng, chỉ phù hợp với những người sợ ngủ quên:
+							những người phải thức khuya làm việc, đồng thời có những cuộc hẹn quan trọng vào sáng hôm sau, hoặc học sinh có bài kiểm tra cực kì quan trọng.
+					</p>
+				</ul>
+				<!--------------- Bao thuc choi game ------------------->
+				<li> <strong class = "w3-xlarge"> Báo thức chơi game: </strong> </li>
+				<ul>
+					<!--------------- Y tuong ------------------>
+					<li class = "w3-large"> <b> Ý tưởng: </b> </li>
+					<p class = "w3-large">
+						Đây là loại báo thức cho người dùng chơi một trò chơi nào đó nhằm tạo sự thích thú và giúp họ tỉnh táo sau khi thức dậy. 
+						Báo thức sẽ đổ chuông liên tục cho tới khi người đó hoàn thành trò chơi hoặc chuông đã reo được một khoảng thời gian nhất định.
+					</p>
+					<!---------------- Cach thuc hien ----------------->
+					<li class = "w3-large"> <b> Cách thực hiện: </b> </li>
+					<p class = "w3-large">
+						Khi người dùng muốn cài đặt loại báo thức này, họ cần chọn kiểu báo thức chơi game, 
+							phần mềm sẽ đưa ra một danh sách các trò chơi cho người dùng lựa chọn. 
+						Nếu các trò chơi không vừa ý với người dùng, họ có thể chọn nút tìm kiếm thêm dưới cùng và chọn các trò chơi có trong máy của mình. 
+						Ngoài ra, sau khi cài đặt trò chơi xong, phần mềm sẽ đưa ra một câu hỏi “Bạn muốn báo thức kéo dài trong bao lâu?”, 
+							khi đó người dùng sẽ cài đặt thời gian tùy theo mức độ tin tưởng rằng người đó có thể thức dậy trước khoảng thời gian đó.
+					</p>
+					<!---------------------- Doi tuong huong toi ----------------->
+					<li class = "w3-large"> <b> Đối tượng hướng tới: </b></li>
+					<p class = "w3-large">
+						Phù hợp với mọi lứa tuổi, người dùng có thể cài đặt trò chơi tùy theo ý thích.
+					</p>
+				</ul>
+				<!------------------ Bao thuc tin tuc ------------------>				
+				<li> <strong class = "w3-xlarge"> Báo thức tin tức: </strong> </li>
+				<ul>
+					<!--------------- Y tuong ------------------>
+					<li class = "w3-large"> <b> Ý tưởng: </b> </li>
+					<p class = "w3-large">
+						Đây là loại báo thức tạo sự hứng thú mỗi ngày cho người dùng, giúp họ có thể dễ dàng quên đi cơn mê ngủ. 
+						Báo thức sẽ đổ chuông liên tục trong 1 khoảng thời gian nhất định 
+							đồng thời phần mềm sẽ đưa ra những tin tức đã xảy ra hoặc thư từ gửi đến người dùng trong thời gian họ đang ngủ. 
+						Người dùng sẽ cảm thấy hứng thú khi cập nhật được tin tức thời sự, thị trường chứng khoáng, kiểm tra sức khỏe,… 
+							hoặc trả lời những người đã gửi thư đến cho mình mà quên đi cơn buồn ngủ.
+					</p>
+					<!---------------- Cach thuc hien ----------------->
+					<li class = "w3-large"> <b> Cách thực hiện: </b> </li>
+					<p class = "w3-large">
+						Khi người dùng muốn cài đặt loại báo thức này, họ cần chọn kiểu báo thức tin tức, phần mềm sẽ đưa ra một danh sách các khung trống, 
+							với mỗi khung trống đó người dùng có thể lựa chọn những đường link dẫn tới những trang web mà họ muốn xem sau khi thức dậy, 
+							hoặc là những phần mềm khác mà họ muốn sử dụng. 
+						Sau khi lựa chọn xong, phần mềm sẽ đưa ra một câu hỏi “Bạn muốn báo thức kéo dài trong bao lâu?”, 
+							khi đó người dùng sẽ cài đặt thời gian tùy theo mức độ tin tưởng rằng người đó có thể thức dậy trước khoảng thời gian đó.
+					</p>
+					<!---------------------- Doi tuong huong toi ----------------->
+					<li class = "w3-large"> <b> Đối tượng hướng tới: </b></li>
+					<p class = "w3-large">
+						Phù hợp với mọi lứa tuổi, đặc biệt với các doanh nhân, những người đang đi làm, 
+							những người có quan hệ rộng và những người phải cập nhật tin tức thường xuyên.
+					</p>
+				</ul>
+			</ol>
+		</div>		
+		<div class = "container">			
+			<h2 class = "s3-xxlarge w3-left w3-margin w3-padding-16"> Danh sách trò chơi: </h2>
+		</div>		
 		<!-------------------  Sudoku ------------------------>
 		<div class = "w3-container w3-quarter">
 			<img class = "w3-padding-16" src = "https://piouscity.github.io/demo_web/sudoku.gif"
