@@ -1,3 +1,4 @@
 Natural Language Processing là gì:
   -https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_natural_language_processing.htm
   -https://en.wikipedia.org/wiki/Natural_language_processing
+  -https://www.slideshare.net/HansiThenuwara/natural-language-processing-64271235
