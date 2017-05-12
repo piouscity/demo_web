@@ -2,4 +2,9 @@ Natural Language Processing là gì:
   -https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_natural_language_processing.htm
   -https://en.wikipedia.org/wiki/Natural_language_processing
   -https://www.slideshare.net/HansiThenuwara/natural-language-processing-64271235
+Phân biệt NLU và NLG:
   -http://www.alta.asn.au/events/altss_w2003_proc/updates/Dale-Discourse-Structure-in-the-Large-2003-12-08.pdf
+Tầm quan trọng của NLP:
+  -https://www.wired.com/insights/2014/02/growing-importance-natural-language-processing/
+Lịch sử NLP:
+  -https://en.wikipedia.org/wiki/History_of_natural_language_processing
